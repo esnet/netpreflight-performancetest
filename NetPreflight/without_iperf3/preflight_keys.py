@@ -4,17 +4,14 @@
 #                                                                                                                               #
 # on HOST_A: On your terminal run the command below with the following arguements                                               #
 #                                                                                                                               #
-# #python <scriptname> -H <TargetHostIPaddress> -K <KeyFilepath>  -F <targetFile> -I <no. of iterations>                        #
+# #python <scriptname> -H <TargetHostIPaddress> -K <KeyFilepath>  -F <targetFile> -I <no. of iterations> -S <targetFilesize>    #
 #                                                                                                                               #
-# e.g python preflight_keys.py -H 67.205.158.239 -K <KeyFilepath> -F /root/largefiles/ -I 5                                     #
-# e.g python preflight_keys.py -H 138.68.10.107 -K <KeyFilepath> -F /root/largefiles/ -I 5                                      #                                                        #
-# on HOST_B: No action is required on host_B                                                                                    #
 #                                                                                                                               #
-# Specify the TargetHost IP address for the traceroute command                                                                  #
+# Specify the TargetHost IP address for ro receive traceroute results                                                           #
 # For Example:                                                                                                                  #
 #                                                                                                                               # 
 # python preflight_keys.py -H 192.5.87.20 -K /Users/bashirm/Downloads/uc-mc4n-key.pem -F /home/cc/experiments/5MB.zip -I 5 -S 5 #
-# python preflight_keys.py -H 192.5.87.20 -K /home/cc/experiments/uc-mc4n-key.pem -F /home/cc/experiments/5MB.zip -I 5          #                                                                                        #
+# python preflight_keys.py -H 192.5.87.20 -K /home/cc/experiments/uc-mc4n-key.pem -F /home/cc/experiments/5MB.zip -I 5 -S 5     #                                                                                        #
 # Requirements: sudo pip install paramiko                                                                                       #
 #################################################################################################################################
 import json
