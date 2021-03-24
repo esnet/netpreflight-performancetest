@@ -63,8 +63,3 @@ To Add Abstract
     * Requirements: sudo pip install paramiko
 
     
-
-Authors
----------
-- Bashir Mohammed
-- Mariam Kiran
