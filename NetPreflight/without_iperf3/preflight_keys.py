@@ -7,9 +7,11 @@
 # #python <scriptname> -H <TargetHostIPaddress> -K <KeyFilepath>  -F <targetFile> -I <no. of iterations> -S <targetFilesize>    #
 #                                                                                                                               #
 #                                                                                                                               #
-# Specify the TargetHost IP address for ro receive traceroute results                                                           #
-# For Example:                                                                                                                  #
-#                                                                                                                               # 
+# Generate files using dev zero on the Target host(Source Node)                                                                 #
+# For example to create a 1MB file with name onemb.zip : dd if=/dev/zero of=onemb.zip count=1 bs=1024                           #                                                                                         #
+# For example to create a 1GB file with name onemb.zip : dd if=/dev/zero of=onegig.zip count=1 bs=10240                         #
+#                                                                                                                               #
+#                                                                                                                               #
 # python preflight_keys.py -H 192.5.87.20 -K /Users/bashirm/Downloads/uc-mc4n-key.pem -F /home/cc/experiments/5MB.zip -I 5 -S 5 #
 # python preflight_keys.py -H 192.5.87.20 -K /home/cc/experiments/uc-mc4n-key.pem -F /home/cc/experiments/5MB.zip -I 5 -S 5     #                                                                                        #
 # Requirements: sudo pip install paramiko                                                                                       #
