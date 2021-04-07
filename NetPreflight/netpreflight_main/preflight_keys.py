@@ -7,7 +7,7 @@
 # #python <scriptname> -H <TargetHostIPaddress> -K <KeyFilepath>  -F <targetFile> -I <no. of iterations> -S <targetFilesize>    #
 #                                                                                                                               #
 #                                                                                                                               #
-# Generate files using dev zero on the Target host(Source Node)                                                                 #
+# Generate files using dev zero on the Target host(Destination Node)                                                            #
 # For example to create a 1MB file with name onemb.zip : dd if=/dev/zero of=onemb.zip count=1 bs=1024                           #                                                                                         #
 # For example to create a 1GB file with name onemb.zip : dd if=/dev/zero of=onegig.zip count=1 bs=10240                         #
 #                                                                                                                               #
