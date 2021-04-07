@@ -56,8 +56,6 @@ To Add Abstract
                                                                                         
     ```e.g python preflight_keys.py -H 192.5.87.20 -K /home/cc/experiments/uc-mc4n-key.pem -F /home/cc/experiments/5MB.zip -I 5 -S 5```
      
-    ```e.g python preflight_keys.py -H 192.5.87.20 -K /Users/bashirm/Downloads/uc-mc4n-key.pem -F /home/cc/experiments/5MB.zip -I 5 -S 5 ```
-     
     * on HOST_B: Generate files using dev zero on the Target host(Destination Node). For example to create a 1MB, 1GB:
 
     ```dd if=/dev/zero of=onemb.zip count=1 bs=1024``` 
