@@ -48,17 +48,21 @@ To Add Abstract
     * Requirements: sudo pip install paramiko
      
      
-* Version 3) Without Iperf - using private keys
+* Version 3) Without Iperf - netpreflight_main - using public keys
 
     * on HOST_A: On your terminal run the command below with the following arguements.        
                                                                                         
-    ```python <script_name> -H <TargetHost_IPaddress> -K <KeyFilepath> - F <targetFile> - I <no.of_iterations>``` 
+    ```python <scriptname> -H <TargetHostIPaddress> -K <KeyFilepath>  -F <targetFile> -I <no. of iterations> -S <targetFilesize>``` 
                                                                                         
-    ```e.g python preflight_keys.py -H 192.5.87.20 -K /home/cc/experiments/uc-mc4n-key.pem -F /home/cc/experiments/5MB.zip -I 5```
+    ```e.g python preflight_keys.py -H 192.5.87.20 -K /home/cc/experiments/uc-mc4n-key.pem -F /home/cc/experiments/5MB.zip -I 5 -S 5```
      
-    ```e.g python preflight_keys.py -H 192.5.87.20 -K /Users/bashirm/Downloads/uc-mc4n-key.pem -F /home/cc/experiments/100MB.zip -I 5 ```
+    ```e.g python preflight_keys.py -H 192.5.87.20 -K /Users/bashirm/Downloads/uc-mc4n-key.pem -F /home/cc/experiments/5MB.zip -I 5 -S 5 ```
      
-    * on HOST_B: No action is required on host_B
+    * on HOST_B: Generate files using dev zero on the Target host(Destination Node). For example to create a 1MB, 1GB:
+
+    ```dd if=/dev/zero of=onemb.zip count=1 bs=1024``` 
+    
+     ```dd if=/dev/zero of=onegig.zip count=1 bs=10240``` 
      
     * Requirements: sudo pip install paramiko
 
