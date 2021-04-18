@@ -3,7 +3,7 @@ Project under development.
 
 # Overview
 ---------
-A simple end-to-end, light-weight tool for testing Network Performance, measuring available throughput and displaying the route across the network.
+A simple end-to-end, light-weight tool for testing Network Performance, measuring available throughput and displaying the route across the network along side saving to memory.
 
 # NetPreflight: Testing Network Performance before DTN-DTN transfer (designed for big data transfers)
 ------------------------------------------------------------------------------
